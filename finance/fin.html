@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceWise</title>
+    <link rel="stylesheet" href="../src/fin.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../calculator/calculator.html">Calculator</a></li>
+                <li><a href="../to-do/to-do.html">Make a To-Do</a></li>
+                <li><a href="../finance/fin.html" class="active">Pocket Finance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <div id="over">
+            <h1>FinanceWise</h1>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>Expense Tracker</h2>
+                <form id="expense-form">
+                    <input type="number" id="expense-amount" placeholder="Amount" required>
+                    <input type="text" id="expense-category" placeholder="Category" required>
+                    <input type="date" id="expense-date" required>
+                    <button type="submit" class="btn">Add Expense</button>
+                </form>
+                <ul id="expense-list"></ul>
+            </div>
+            <div class="card">
+                <h2>Budget Planner</h2>
+                <form id="budget-form">
+                    <input type="text" id="budget-category" placeholder="Category" required>
+                    <input type="number" id="budget-amount" placeholder="Amount" required>
+                    <button type="submit" class="btn">Set Budget</button>
+                </form>
+                <ul id="budget-list"></ul>
+            </div>
+            <div class="card">
+                <h2>Savings Goals</h2>
+                <form id="goal-form">
+                    <input type="text" id="goal-name" placeholder="Goal Name" required>
+                    <input type="number" id="goal-target" placeholder="Target Amount" required>
+                    <input type="number" id="goal-current" placeholder="Current Amount" required>
+                    <button type="submit" class="btn">Add Goal</button>
+                </form>
+                <ul id="goal-list"></ul>
+            </div>
+            <div class="card">
+                <h2>Financial Insights</h2>
+                <button id="generate-insights" class="btn">Generate Insights</button>
+                <ul id="insights-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../finance/fin.js"></script>
+</body>
+</html>
